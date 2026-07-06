@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card">
+<h2>Edit Intern</h2>
+
+<form method="POST">
+    <input class="form-control mb-2" name="name" value="{{intern.name}}">
+    <input class="form-control mb-2" name="email" value="{{intern.email}}">
+    <input class="form-control mb-2" name="domain" value="{{intern.domain}}">
+
+    <button class="btn btn-primary">Update</button>
+</form>
+
+</div>
+
+{% endblock %}

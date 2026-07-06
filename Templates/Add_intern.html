@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card">
+<h2>Add Intern</h2>
+
+<form method="POST">
+    <input class="form-control mb-2" name="name" placeholder="Name" required>
+    <input class="form-control mb-2" name="email" placeholder="Email" required>
+    <input class="form-control mb-2" name="domain" placeholder="Domain" required>
+
+    <button class="btn btn-success">Submit</button>
+</form>
+
+</div>
+
+{% endblock %}
